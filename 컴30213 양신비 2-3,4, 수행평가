@@ -1,0 +1,70 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP9dxKe97BLgL1EKHp3BtBw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sinbee123/colab/blob/main/%EC%BB%B430213%20%EC%96%91%EC%8B%A0%EB%B9%84%202-3%2C4%2C%20%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "bROY6rqcxals"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pound = float(input(\"파운드를 입력하세요 : \"))\n",
+        "kg = pound * 0.453592\n",
+        "print(pound, \"파운드는\", round(kg, 3), \"킬로그램입니다.\")\n",
+        "kg = float(input(\"킬로그램을 입력하세요 :\"))\n",
+        "pound = kg * 2.204623\n",
+        "print(kg, \"킬로그램은\", round(pound, 3), \"파운드입니다.\" )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BVG1NWsXxd6D",
+        "outputId": "b8cebe72-1473-4bf4-8fa2-dd05f8d9931f"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "파운드를 입력하세요 : 15\n",
+            "15.0 파운드는 6.804 킬로그램입니다.\n",
+            "킬로그램을 입력하세요 :15\n",
+            "15.0 킬로그램은 33.069 파운드입니다.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
