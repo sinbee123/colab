@@ -1,0 +1,130 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyOv33zLSLTySyCBo8spU5qM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sinbee123/colab/blob/main/30213%20%EC%96%91%EC%8B%A0%EB%B9%84%20%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2RAGvlIea43E",
+        "outputId": "03b8aff6-8a74-4815-f4ed-db1fe4fa3a52"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "정수를 입력 : 12\n",
+            "12 짝수입니다.\n"
+          ]
+        }
+      ],
+      "source": [
+        "num = int(input(\"정수를 입력 : \"))\n",
+        "\n",
+        "if (num % 2) == 0 :\n",
+        "  print(num, \"짝수입니다.\")\n",
+        "\n",
+        "if (num % 2) == 1 :\n",
+        "  print(num, \"홀수입니다.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "-6N7mq1pdd2e"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bAt4nnkJhi59"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "print(\"** 가위 바위 보 게임 **\")\n",
+        "count = 7\n",
+        "while count > 0 :\n",
+        "  com_player = random.choice([\"가위\", \"바위\", \"보\"])\n",
+        "  user_player = input(\"가위/바위/보 중 하나를 입력하세요 ==> \")\n",
+        "  if (com_player == user_player) :\n",
+        "    print(\"비겼다.\")\n",
+        "  elif ((com_player == \"가위\") and (user_player == \"바위\")) or \\\n",
+        "    ((com_player == \"바위\") and (user_player == \"보\")) or \\\n",
+        "    ((com_player == \"보\") and (user_player == \"가위\")) :\n",
+        "    print(\"이겼다.\")\n",
+        "  else :\n",
+        "    print(\"졌다.\")\n",
+        "  count = count - 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aA4OBzzNhjRM",
+        "outputId": "882d080a-067d-4b64-ea77-20ac64bc4d46"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "** 가위 바위 보 게임 **\n",
+            "가위/바위/보 중 하나를 입력하세요 ==> rkdnl\n",
+            "졌다.\n",
+            "가위/바위/보 중 하나를 입력하세요 ==> 바위\n",
+            "비겼다.\n",
+            "가위/바위/보 중 하나를 입력하세요 ==> 보\n",
+            "이겼다.\n",
+            "가위/바위/보 중 하나를 입력하세요 ==> 바위\n",
+            "이겼다.\n",
+            "가위/바위/보 중 하나를 입력하세요 ==> 가위\n",
+            "비겼다.\n",
+            "가위/바위/보 중 하나를 입력하세요 ==> 보\n",
+            "졌다.\n",
+            "가위/바위/보 중 하나를 입력하세요 ==> 가위\n",
+            "비겼다.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
