@@ -4,8 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "collapsed_sections": [],
-      "authorship_tag": "ABX9TyOv33zLSLTySyCBo8spU5qM",
+      "authorship_tag": "ABX9TyOSSAiP88l1vcl+Kr0kbrlF",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -29,102 +28,126 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 1,
       "metadata": {
+        "id": "dyl-hD89eKf5",
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "2RAGvlIea43E",
-        "outputId": "03b8aff6-8a74-4815-f4ed-db1fe4fa3a52"
+        "outputId": "2b7456fd-62d0-48a6-9706-d4723181b9b3"
       },
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "정수를 입력 : 12\n",
-            "12 짝수입니다.\n"
+            "2단\n",
+            "2\n",
+            "4\n",
+            "6\n",
+            "8\n",
+            "10\n",
+            "12\n",
+            "14\n",
+            "16\n",
+            "18\n",
+            " \n",
+            "3단\n",
+            "3\n",
+            "6\n",
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n",
+            "24\n",
+            "27\n",
+            " \n",
+            "4단\n",
+            "4\n",
+            "8\n",
+            "12\n",
+            "16\n",
+            "20\n",
+            "24\n",
+            "28\n",
+            "32\n",
+            "36\n",
+            " \n",
+            "5단\n",
+            "5\n",
+            "10\n",
+            "15\n",
+            "20\n",
+            "25\n",
+            "30\n",
+            "35\n",
+            "40\n",
+            "45\n",
+            " \n",
+            "6단\n",
+            "6\n",
+            "12\n",
+            "18\n",
+            "24\n",
+            "30\n",
+            "36\n",
+            "42\n",
+            "48\n",
+            "54\n",
+            " \n",
+            "7단\n",
+            "7\n",
+            "14\n",
+            "21\n",
+            "28\n",
+            "35\n",
+            "42\n",
+            "49\n",
+            "56\n",
+            "63\n",
+            " \n",
+            "8단\n",
+            "8\n",
+            "16\n",
+            "24\n",
+            "32\n",
+            "40\n",
+            "48\n",
+            "56\n",
+            "64\n",
+            "72\n",
+            " \n",
+            "9단\n",
+            "9\n",
+            "18\n",
+            "27\n",
+            "36\n",
+            "45\n",
+            "54\n",
+            "63\n",
+            "72\n",
+            "81\n",
+            " \n"
           ]
         }
       ],
       "source": [
-        "num = int(input(\"정수를 입력 : \"))\n",
-        "\n",
-        "if (num % 2) == 0 :\n",
-        "  print(num, \"짝수입니다.\")\n",
-        "\n",
-        "if (num % 2) == 1 :\n",
-        "  print(num, \"홀수입니다.\")"
+        "for i in range(2, 10) :\n",
+        "  print(f'{i}단')\n",
+        "  for j  in range(1, 10) :\n",
+        "    print(f'{i*j}')\n",
+        "  print(' ')"
       ]
     },
     {
       "cell_type": "code",
       "source": [],
       "metadata": {
-        "id": "-6N7mq1pdd2e"
+        "id": "F6UrMKsdmeDQ"
       },
       "execution_count": null,
       "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [],
-      "metadata": {
-        "id": "bAt4nnkJhi59"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "import random\n",
-        "print(\"** 가위 바위 보 게임 **\")\n",
-        "count = 7\n",
-        "while count > 0 :\n",
-        "  com_player = random.choice([\"가위\", \"바위\", \"보\"])\n",
-        "  user_player = input(\"가위/바위/보 중 하나를 입력하세요 ==> \")\n",
-        "  if (com_player == user_player) :\n",
-        "    print(\"비겼다.\")\n",
-        "  elif ((com_player == \"가위\") and (user_player == \"바위\")) or \\\n",
-        "    ((com_player == \"바위\") and (user_player == \"보\")) or \\\n",
-        "    ((com_player == \"보\") and (user_player == \"가위\")) :\n",
-        "    print(\"이겼다.\")\n",
-        "  else :\n",
-        "    print(\"졌다.\")\n",
-        "  count = count - 1"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "aA4OBzzNhjRM",
-        "outputId": "882d080a-067d-4b64-ea77-20ac64bc4d46"
-      },
-      "execution_count": 2,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "** 가위 바위 보 게임 **\n",
-            "가위/바위/보 중 하나를 입력하세요 ==> rkdnl\n",
-            "졌다.\n",
-            "가위/바위/보 중 하나를 입력하세요 ==> 바위\n",
-            "비겼다.\n",
-            "가위/바위/보 중 하나를 입력하세요 ==> 보\n",
-            "이겼다.\n",
-            "가위/바위/보 중 하나를 입력하세요 ==> 바위\n",
-            "이겼다.\n",
-            "가위/바위/보 중 하나를 입력하세요 ==> 가위\n",
-            "비겼다.\n",
-            "가위/바위/보 중 하나를 입력하세요 ==> 보\n",
-            "졌다.\n",
-            "가위/바위/보 중 하나를 입력하세요 ==> 가위\n",
-            "비겼다.\n"
-          ]
-        }
-      ]
     }
   ]
 }
